@@ -1,0 +1,94 @@
+/* PekerjaanForm.css */
+.container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-weight: bold;
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #007bff;
+    border: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Tambahkan gaya mirip Google Form */
+
+.container-form {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+h2 {
+    font-family: 'Google Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #dfe1e5;
+    font-size: 16px;
+}
+
+.form-select {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #dfe1e5;
+    font-size: 16px;
+}
+
+.form-label {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+button {
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1764c5;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus {
+    border-color: #4285f4;
+    box-shadow: 0 1px 3px rgba(66, 133, 244, 0.5);
+    outline: none;
+}

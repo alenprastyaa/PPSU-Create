@@ -1,0 +1,149 @@
+/* PekerjaanList.css */
+.add-btn {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.add-btn i {
+    margin-right: 5px;
+}
+
+.table-responsive {
+    margin-top: 20px;
+}
+
+.table-header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+img.img-fluid {
+    display: block;
+    margin: auto;
+}
+
+button {
+    display: flex;
+    align-items: center;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+table {
+    background-color: transparent !important;
+}
+
+.clickable:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+    .add-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .table {
+        font-size: 0.9rem;
+    }
+
+    td img {
+        max-width: 80px;
+    }
+
+    .d-flex {
+        flex-direction: column;
+    }
+
+    .me-md-2 {
+        margin-bottom: 10px;
+    }
+}
+
+/* Styling untuk print */
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        font-size: 12px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table th,
+    table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    table th {
+        background-color: #f2f2f2;
+        color: black;
+    }
+
+    .img-fluid {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .table-header {
+        background-color: #f9f9f9 !important;
+    }
+
+    .d-flex,
+    .add-btn,
+    .fas.fa-edit,
+    .fas.fa-trash {
+        display: none;
+    }
+
+    @page {
+        size: landscape;
+    }
+}
+
+.table-responsive {
+    padding: 20px;
+    background-color: white;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.pagination li {
+    list-style: none;
+    margin: 0 5px;
+    color: black;
+}
+
+.pagination a {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+}
+
+.pagination .active a {
+    background-color: #000000;
+    color: white !important;
+}

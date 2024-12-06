@@ -1,13 +1,87 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('../public/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app-container {
+  background: transparent;
+  /* Make sure container does not interfere with the body background */
+  min-height: 100vh;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.logo-left,
+.logo-right {
+  height: 100px;
+}
+
+@media (max-width: 768px) {
+
+  .logo-left,
+  .logo-right {
+    height: 60px;
+  }
+}
+
+@media print {
+
+  /* CSS for print mode */
+  body {
+    -webkit-print-color-adjust: exact;
+    font-size: 10px;
+    background-image: url('../public/bg.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  tr,
+  td,
+  th {
+    page-break-inside: avoid;
+  }
+
+  .no-print,
+  .add-btn,
+  .delete-btn,
+  .edit-btn,
+  .modal {
+    display: none !important;
+  }
+
+  @page {
+    margin: 1cm;
+  }
+}
+
+.pagination .page-item .page-link {
+  color: black !important;
+}
+
+.pagination .active .page-link {
+  background-color: #007bff;
+  /* Sesuaikan warna latar belakang jika diperlukan */
+  color: white !important;
 }
